@@ -9,6 +9,8 @@ spec:
   ref:
     branch: main
   url: https://github.com/satr/app-with-chart
+  secretRef:
+    name: regcred
   ignore: |
     .git/
     .sops.yaml
