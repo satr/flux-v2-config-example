@@ -20,5 +20,10 @@ spec:
       # For Flux "image.repository" means full path to the image (registry/repository)
       repository: ghcr.io/satr/app-with-chart
       tag: main-latest  # {"$imagepolicy": "app-with-chart:app-with-chart:tag"}
-    env:
-      logLevel: ERROR
+    resources:
+      limits:
+        cpu: 220m
+        memory: 190Mi
+      requests:
+        cpu: 50m
+        memory: 110Mi
