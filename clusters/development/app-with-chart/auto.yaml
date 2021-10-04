@@ -1,0 +1,19 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+metadata:
+  name: app-with-chart
+  namespace: app-with-chart
+spec:
+  git:
+    checkout:
+      ref:
+        branch: main
+    commit:
+      author:
+        email: satr.github.io@gmail.com
+        name: FluxBot
+  interval: 1m0s
+  sourceRef:
+    kind: GitRepository
+    name: app-with-chart

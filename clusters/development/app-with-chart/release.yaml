@@ -1,0 +1,22 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: app-with-chart
+  namespace: app-with-chart
+spec:
+  chart:
+    spec:
+      chart: ./charts/app-with-chart
+      sourceRef:
+        kind: GitRepository
+        name: app-with-chart
+        namespace: app-with-chart
+  interval: 1m0s
+  releaseName: app-with-chart
+  targetNamespace: app-with-chart
+  values:
+    image:
+      # For Flux "image.repository" means full path to the image (registry/repository)
+      repository: ghcr.io/satr/app-with-chart
+      tag: main-latest  # {"$imagepolicy": "app-with-chart:app-with-chart:tag"}
