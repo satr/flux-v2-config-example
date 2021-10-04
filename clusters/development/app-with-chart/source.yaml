@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   name: app-with-chart
-  namespace: app-with-chart
+  namespace: flux-system
 spec:
   interval: 1m0s
   ref:
