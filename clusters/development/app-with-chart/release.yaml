@@ -22,7 +22,7 @@ spec:
       tag: main-latest  # {"$imagepolicy": "app-with-chart:app-with-chart:tag"}
     resources:
       limits:
-        cpu: 220m
+        cpu: 230m
         memory: 190Mi
       requests:
         cpu: 50m
