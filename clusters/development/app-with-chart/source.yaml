@@ -8,7 +8,7 @@ spec:
   interval: 1m0s
   ref:
     branch: main
-  url: https://github.com/equinor/app-with-chart
+  url: https://github.com/satr/app-with-chart
   ignore: |
     .git/
     .sops.yaml
