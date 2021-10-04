@@ -9,8 +9,8 @@ spec:
   ref:
     branch: main
   url: https://github.com/satr/app-with-chart
-  secretRef:
-    name: ssh-credentials
+#  secretRef:
+#    name: ssh-credentials
   ignore: |
     .git/
     .sops.yaml
