@@ -11,7 +11,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: app-with-chart
-        namespace: app-with-chart
+#        namespace: app-with-chart
   interval: 1m0s
   releaseName: app-with-chart
   targetNamespace: app-with-chart
